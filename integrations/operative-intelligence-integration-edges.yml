@@ -1,0 +1,16 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/operative-intelligence/integrations
+- https://n8n.io/integrations/operative-intelligence/
+- https://composio.dev/toolkits/operative-intelligence
+- https://monid.ai/tools/operative-intelligence
+checked:
+- https://composio.dev/toolkits/operative-intelligence
+- https://monid.ai/tools/operative-intelligence
+- https://n8n.io/integrations/operative-intelligence/
+- https://zapier.com/apps/operative-intelligence/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

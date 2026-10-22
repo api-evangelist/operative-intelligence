@@ -1,25 +1,75 @@
 aid: operative-intelligence
+
 name: Operative Intelligence
-description: 'Operative Intelligence is a company surfaced via the API Evangelist harvest backlog (source:
-  vc-portfolio; backed by bonfire-ventures) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://www.operativeintelligence.com/strapi/uploads/OI_OG_67ee3695a6.png
+
+description: 'Operative Intelligence provides AI‑powered contact center analytics, delivering real‑time metrics, sentiment analysis, and actionable insights to help C‑suite leaders improve performance, reduce costs, and enhance customer experience across all channels.'
+
 url: https://raw.githubusercontent.com/api-evangelist/operative-intelligence/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- AI
+- Analytics
+- ContactCenter
+- SaaS
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- bonfire-ventures
+
 common:
+- type: Hosts
+  url: hosts/operative-intelligence-hosts.yml
+- type: TrustCenter
+  url: https://trust.operativeintelligence.com/
+- type: TermsOfService
+  url: https://operativeintelligence.com/terms
+- type: DomainSecurity
+  url: security/operative-intelligence-domain-security.yml
 - type: Website
   url: https://operativeintelligence.com
+- type: Documentation
+  url: https://www.operativeintelligence.com
+- type: About
+  url: https://www.operativeintelligence.com/about
+- type: Blog
+  url: https://www.operativeintelligence.com/blog
+- type: PrivacyPolicy
+  url: https://www.operativeintelligence.com/privacy
+
+apis: []
+
+x-backed-by:
+- bonfire-ventures
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: "Homepage and documentation are rendered via JavaScript, preventing machine‑readable contract discovery."
+  evidence:
+    - url: https://www.operativeintelligence.com
+      status: 200
+  checked: '2026-10-22'
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
